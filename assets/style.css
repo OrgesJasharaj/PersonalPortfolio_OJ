@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/*======= Main Css =======*/
-
-* {
+     
+     /*======= Main Css =======*/
+     
+     * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-
-body {
+     }
+     
+     body {
     background: #000116;
-}
-
-
-/*======= Header navigation bar =======*/
-
-header {
+     }
+     
+     
+     /*======= Header navigation bar =======*/
+     
+     header {
     z-index: 999;
     position: fixed;
     width: 100%;
-}
-
-header .nav-bar {
+     }
+     
+     header .nav-bar {
     position: relative;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
@@ -35,43 +35,43 @@ header .nav-bar {
     align-items: center;
     padding: 0 150px;
     transition: 0.5s ease;
-}
-
-.nav-bar .logo {
+     }
+     
+     .nav-bar .logo {
     color: #fff;
     font-size: 1.8em;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-.navigation .nav-items a {
+     }
+     
+     .navigation .nav-items a {
     color: #fff;
     font-size: 1em;
     text-decoration: none;
-}
-
-.navigation .nav-items a:not(:last-child) {
+     }
+     
+     .navigation .nav-items a:not(:last-child) {
     margin-right: 50px;
-}
-
-.navigation .nav-items a i {
+     }
+     
+     .navigation .nav-items a i {
     display: none;
-}
-
-
-/*======= Home =======*/
-
-section {
+     }
+     
+     
+     /*======= Home =======*/
+     
+          section {
     position: relative;
     font-size: 1em;
     padding: 30px 150px;
     transition: 0.5s ease;
     transition-property: padding;
-}
-
-.home {
+     }
+     
+     .home {
     position: relative;
     min-height: 100vh;
     background: url(home-bg.jpg) no-repeat;
@@ -80,9 +80,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+     }
 
-.home:before {
+     .home:before {
     z-index: 888;
     content: '';
     position: absolute;
@@ -91,72 +91,137 @@ section {
     background: linear-gradient(transparent, #000116);
     bottom: 0;
     left: 0;
-}
+     }
 
-.home h1 {
+     .home h1 {
     color: rgba(255, 255, 255, 0.5);
     font-size: 6em;
     font-weight: 600;
-}
+     }
 
 
-/*======= Content section =======*/
+    /*======= Content section =======*/
 
-.content h1 {
+    .content h1 {
     color: #fff;
     font-size: 3.5em;
     font-weight: 600;
-}
-
-.content p {
+    }
+    
+    .content p {
     color: #fff;
     font-size: 1em;
     margin: 30px 0;
-}
+    }
+    
 
+     /*======= Scroll bar =======*/
 
-/*======= Scroll bar =======*/
-
-::-webkit-scrollbar {
+     ::-webkit-scrollbar {
     background: #fff;
     width: 11px;
     border-radius: 2em;
-}
-
-::-webkit-scrollbar-thumb {
+     }
+     
+     ::-webkit-scrollbar-thumb {
     background: #282f4e;
     width: 100%;
     border-radius: 2em;
-}
-
-::-webkit-scrollbar-thumb:hover {
+     }
+     
+     ::-webkit-scrollbar-thumb:hover {
     background: #454f6d;
-}
+     }
+     
+     
+     /*======= Scroll indicator bar =======*/
 
-
-/*======= Scroll indicator bar =======*/
-
-.scroll-indicator-container {
+     .scroll-indicator-container {
     width: 100%;
     height: 5px;
-}
-
-.scroll-indicator-bar {
+     }
+     
+     .scroll-indicator-bar {
     background: #199fff;
     width: 0%;
     height: 100%;
     box-shadow: 0 5px 25px #199fff, 0 5px 50px #199fff;
-}
-
-.nav-close-btn,
-.nav-menu-btn {
+     }
+     
+     .nav-close-btn,
+     .nav-menu-btn {
     display: none;
-}
+     }
+
+      /*checkbox*/
+
+      input[type="checkbox"]
+      {
+     -webkit-appearance: none;
+     visibility: hidden;
+     display: none;
+      }
+ 
+      .check
+      {
+     position: relative;
+     display: block;
+     width: 40px;
+     height: 20px;
+     background: #199fff;
+     cursor: pointer;
+     border-radius: 20px;
+     overflow: hidden;
+     transition: ease-in 0.5s;
+      }
+ 
+      input[type="checkbox"]:checked ~ .check
+      {
+     background: #fff;
+     box-shadow: 0 0 0 1400px #ffffff;
+      }
+ 
+      .check:before
+      {
+     content: '';
+     position: absolute;
+     top: 2px;
+     left: 2px;
+     background: #fff;
+     width: 16px;
+     height: 16px;
+     border-radius: 50%;
+     transition: 0.5s;
+      }
+      
+      input[type="checkbox"]:checked ~ .check:before
+      {
+     transform: translateX(-50px);
+      }
+      
+      .check::after
+      {
+     content: '';
+     position: absolute;
+     top: 2px;
+     right: 2px;
+     background: #282f4e;
+     width: 16px;
+     height: 16px;
+     border-radius: 50%;
+     transition: 0.5s;
+     transform: translateX(50px);
+      }
+      
+      input[type="checkbox"]:checked ~ .check::after
+      {
+     transform: translateX(0px);
+      }
 
 
-/*======= Media queries (max-width: 1100px) =======*/
+     /*======= Media queries (max-width: 1100px) =======*/
 
-@media screen and (max-width: 1100px) {
+     @media screen and (max-width: 1100px) {
     header .nav-bar {
         padding: 0 50px;
     }
@@ -164,78 +229,15 @@ section {
         padding: 30px 50px;
         font-size: 0.9em;
     }
-}
+     }
 
-/*checkbox*/
-
-input[type="checkbox"]
-{
-    -webkit-appearance: none;
-    visibility: hidden;
-    display: none;
-}
-
-.check
-{
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 20px;
-    background: #199fff;
-    cursor: pointer;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: ease-in 0.5s;
-}
-
-input[type="checkbox"]:checked ~ .check
-{
-    background: #fff;
-    box-shadow: 0 0 0 1400px #ffffff;
-}
-
-.check:before
-{
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    background: #fff;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    transition: 0.5s;
-}
-
-input[type="checkbox"]:checked ~ .check:before
-{
-    transform: translateX(-50px);
-}
-
-.check::after
-{
-    content: '';
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    background: #282f4e;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    transition: 0.5s;
-    transform: translateX(50px);
-}
-
-input[type="checkbox"]:checked ~ .check::after
-{
-    transform: translateX(0px);
-}
+    
 
 
 
-/*======= Media queries (max-width: 850px) =======*/
+     /*======= Media queries (max-width: 850px) =======*/
 
-@media screen and (max-width: 850px) {
+     @media screen and (max-width: 850px) {
     header .nav-bar {
         padding: 0 20px;
     }
@@ -306,4 +308,4 @@ input[type="checkbox"]:checked ~ .check::after
         margin: 10px;
         cursor: pointer;
     }
-}
+     }
