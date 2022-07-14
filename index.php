@@ -22,10 +22,13 @@
                     <a href="#"><i class="uil uil-user-circle"></i>About</a>
                     <a href="#"><i class="uil uil-brackets-curly"></i>Skills</a>
                     <a href="#"><i class="uil uil-database"></i>Services</a>
-                    
                     <a href="#"><i class="uil uil-envelope"></i>Contact</a>
                 </div>
             </div>
+            <label>
+                <input type="checkbox">
+                <span class="check"></span>
+            </label>
             <i class="uil uil-apps nav-menu-btn"></i>
         </div>
         <div class="scroll-indicator-container">
