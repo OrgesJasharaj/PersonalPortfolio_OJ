@@ -7,6 +7,7 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="script.js"></script>
   
 </head>
 
@@ -61,6 +62,7 @@
       navigation.classList.remove("active");
     });
   </script>
+ 
   
 
 
