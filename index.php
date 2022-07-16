@@ -10,9 +10,20 @@
   </head>
       <header>
         <div class="nav-bar">
-          <a href="#"></a>
+          <a href="#" class="logo">Orges</a>
+          <div class="navigation">
+            <div class="nav-items">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#project">Project</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
         </div>
       </header>
+
+      
 
 
   </html>
