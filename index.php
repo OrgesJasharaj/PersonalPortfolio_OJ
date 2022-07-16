@@ -23,7 +23,25 @@
         </div>
       </header>
 
-      
+      <section class="home flex-center" id="home">
+        <div class="home-container">
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="info">
+            <h2>Hi, I am Orges Jasharaj</h2>
+            <h3>Full Stack Developer</h3>
+            <p>I can work as front-end developer and back-end developer</p>
+          <a href="" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+        <div class="home-img">
+          <img src="images/home.jpg" alt="">
+        </div>
+      </div>
+      <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
+      </section>
 
 
   </html>
