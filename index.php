@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   </head>
+  <body>
       <header>
         <div class="nav-bar">
           <a href="#" class="logo">Orges</a>
@@ -44,5 +45,161 @@
       </section>
 
 
+
+      <section class="about section" id="about">
+        <div class="container flex-center">
+          <h1 class="section-title-01">About Me</h1>
+          <h2 class="section-title-02">About Me</h2>
+          <div class="content flex-center">
+            <div class="about-img">
+              <img src="images/home.jpg" alt="">
+            </div>
+            <div class="about-info">
+              <div class="description">
+                <h3>I'm Orges</h3>
+                <h4>A <span>full stack developer</span> from <span>Kosova<span></h4>
+                <p>I design website and i make the backend of web.Check my skills to see with what i work!</p>
+              </div>
+              <ul class="professional-list">
+                <li class="list-item">
+                  <h3>+2</h3>
+                  <span>Years of<br>Experience</span>
+                </li>
+                <li class="list-item">
+                  <h3>14</h3>
+                  <span>Happy<br>Customers</span>
+                </li>
+                <li class="list-item">
+                  <h3>18</h3>
+                  <span>Success<br>Projects</span>
+                </li>
+              </ul>
+              <a href="" class="btn">Download CV <i class="fas fa-download"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <div class="container flex-center">
+          <h1 class="section-title-01">Skills</h1>
+          <h1 class="section-title-02">Skills</h1>
+          <div class="content">
+            <div class="skills-description">
+              <h3>Education & Skills</h3>
+              <p>I am actually in high school now but i am going in the digital school in Prizren too.I spent my time and in look toturial for programming</p>
+            </div>
+            <div class="skills-info education-all">
+              <div class="education">
+                <h4><label>Education</label></h4>
+                <ul class="edu-list">
+                  <li class="item">
+                    <span class="year">2010-2019</span>
+                    <p><span>Elementary School</span>- Shaban Mazreku</p>
+                  </li>
+                  <li class="item">
+                    <span class="year">2020-2022...</span>
+                    <p><span>High School</span>- Jeta e Re</p>
+                  </li>
+                  <li class="item">
+                    <span class="year">2020-2022</span>
+                    <p><span>Programming School</span>- Shkolla Digjitale</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="education">
+                <h4><label>Skills</label></h4>
+                <ul class="bars">
+                  <li class="bar">
+                    <div class="info">
+                      <span>HTML</span>
+                      <span>95%</span>
+                    </div>
+                    <div class="line html"></div>
+                  </li>
+                  <li class="bar">
+                    <div class="info">
+                      <span>CSS</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="line css"></div>
+                  </li><li class="bar">
+                    <div class="info">
+                      <span>Javascript</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="line javascript"></div>
+                  </li><li class="bar">
+                    <div class="info">
+                      <span>Jquery</span>
+                      <span>85%</span>
+                    </div>
+                    <div class="line jquery"></div>
+                  </li>
+                  <li class="bar">
+                    <div class="info">
+                      <span>Bootstrap</span>
+                      <span>90%</span>
+                    </div>
+                    <div class="line bootstrap"></div>
+                  </li>
+                  <li class="bar">
+                    <div class="info">
+                      <span>Php & Mysql</span>
+                      <span>80%</span>
+                    </div>
+                    <div class="line php"></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="education">
+                <h4><label>Awards</label></h4>
+                <ul class="edu-list">
+                  <li class="item">
+                    <span class="year">2020</span>
+                    <p><span>The best IT student in the school</span> - High school "Jeta e Re"</p>
+                  </li>
+                  <li class="item">
+                    <span class="year">2021</span>
+                    <p><span>Frontend Developer</span> - Shkolla Digjitale Prizren</p>
+                  </li>
+                  <li class="item">
+                    <span class="year">2022</span>
+                    <p><span>Backend Developer</span> - Shkolla Digjitale Prizren...</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="portfolio section" id="portfolio">
+        <div class="container flex-center">
+          <h1 class="section-title-01">Projects</h1>
+          <h2 class="section-title-02">Projects</h2>
+          <div class="content">
+            <div class="portfolio-list">
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3></h3>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+    <script src="js/main.js"></script>
+    </body>
   </html>
 
