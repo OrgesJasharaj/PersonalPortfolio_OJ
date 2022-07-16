@@ -63,7 +63,7 @@
      
      /*======= Home =======*/
      
-    /*      section {
+          section {
     position: relative;
     font-size: 1em;
     padding: 30px 150px;
@@ -74,7 +74,7 @@
      .home {
     position: relative;
     min-height: 100vh;
-    background: url(home.jpg) no-repeat;
+    background: url(home-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -93,10 +93,14 @@
     left: 0;
      }
 
-    
+     .home h1 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 6em;
+    font-weight: 600;
+     }
 
 
-    /*======= Content section =======
+    /*======= Content section =======*/
 
     #content h1 {
     color: #fff;

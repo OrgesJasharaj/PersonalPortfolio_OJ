@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
   
@@ -21,8 +21,7 @@
                     <i class="uil uil-times nav-close-btn"></i>
                     <a href="#"><i class="uil uil-home"></i> Home</a>
                     <a href="#"><i class="uil uil-user-circle"></i>About</a>
-                    <a href="#"><i class="uil uil-brackets-curly"></i>Skills</a>
-                    <a href="#"><i class="uil uil-database"></i>Services</a>
+                    <a href="#"><i class="uil uil-brackets-curly"></i>Projects</a>
                     <a href="#"><i class="uil uil-envelope"></i>Contact</a>
                 </div>
             </div>
@@ -35,8 +34,8 @@
     </header>
 
  
-
-
+   
+  
     <script>
     //Javacript for the scroll indicator bar
     window.addEventListener("scroll", () => {
