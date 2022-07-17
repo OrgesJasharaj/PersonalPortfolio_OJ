@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   </head>
   <body>
+
+      <div class="scrollToTop-btn flex-center">
+          <i class="fas fa-arrow-up"></i>
+      </div>
+
+
+
       <header>
         <div class="nav-bar">
           <a href="#" class="logo">Orges</a>
@@ -298,7 +305,7 @@
           </div>
         </div>
 
-        
+
         <div class="get-in-touch sub-section">
           <div class="container">
             <div class="content flex-center">
@@ -361,6 +368,38 @@
           </div>
         </div>
       </seciton>
+
+      <footer>
+        <div class="footer-container">
+          <div class="about group">
+            <h2>Orges</h2>
+            <p>Full Stack Developer</p>
+            <a href="#about">About Me</a>
+          </div>
+          <div class="hr"></div>
+            <div class="info group">
+              <h3>More</h3>
+              <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="hr"></div>
+            <div class="follow group">
+            <h3>Follow</h3>
+            <ul>
+              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="footer-copyright group">
+            <p>2022 by Orges Jasharaj.</p>
+          </div>
+        
+      </footer>
 
 
 
