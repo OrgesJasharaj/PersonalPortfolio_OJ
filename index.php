@@ -15,13 +15,21 @@
       </div>
 
 
+      <div class="theme-btn flex-center">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </div>
+
+
+
+
 
       <header>
         <div class="nav-bar">
           <a href="#" class="logo">Orges</a>
           <div class="navigation">
             <div class="nav-items">
-              <a href="#home">Home</a>
+              <a class="active" href="#home">Home</a>
               <a href="#about">About</a>
               <a href="#skills">Skills</a>
               <a href="#projects">Projects</a>
