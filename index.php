@@ -17,7 +17,7 @@
               <a href="#home">Home</a>
               <a href="#about">About</a>
               <a href="#skills">Skills</a>
-              <a href="#project">Project</a>
+              <a href="#projects">Projects</a>
               <a href="#contact">Contact</a>
             </div>
           </div>
@@ -175,24 +175,130 @@
       </section>
 
 
-      <section class="portfolio section" id="portfolio">
+      <section class="projects section" id="projects">
         <div class="container flex-center">
           <h1 class="section-title-01">Projects</h1>
           <h2 class="section-title-02">Projects</h2>
           <div class="content">
-            <div class="portfolio-list">
+            <div class="projects-list">
               <div class="img-card-container">
                 <div class="img-card">
                   <div class="overlay"></div>
                   <div class="info">
-                    <h3></h3>
+                    <h3>Web Design</h3>
+                    <span>web..</span>
+                  </div>
+                  <img src="images/home.jpg" alt="">
+                </div>
+                <div class="project-model flex-center">
+                  <div class="projects-model-body">
+                    <i class="fas fa-times projects-close-btn"></i>
+                    <h3>Web Design</h3>
+                    <img src="images/home.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                  </div>
+                </div>
+              </div>
 
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3>Web Design</h3>
+                    <span>web..</span>
+                  </div>
+                  <img src="images/home.jpg" alt="">
+                </div>
+                <div class="project-model flex-center">
+                  <div class="projects-model-body">
+                    <i class="fas fa-times projects-close-btn"></i>
+                    <h3>Web Design</h3>
+                    <img src="images/home.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3>Web Design</h3>
+                    <span>web..</span>
+                  </div>
+                  <img src="images/home.jpg" alt="">
+                </div>
+                <div class="project-model flex-center">
+                  <div class="projects-model-body">
+                    <i class="fas fa-times projects-close-btn"></i>
+                    <h3>Web Design</h3>
+                    <img src="images/home.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3>Web Design</h3>
+                    <span>web..</span>
+                  </div>
+                  <img src="images/home.jpg" alt="">
+                </div>
+                <div class="project-model flex-center">
+                  <div class="projects-model-body">
+                    <i class="fas fa-times projects-close-btn"></i>
+                    <h3>Web Design</h3>
+                    <img src="images/home.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3>Web Design</h3>
+                    <span>web..</span>
+                  </div>
+                  <img src="images/home.jpg" alt="">
+                </div>
+                <div class="project-model flex-center">
+                  <div class="projects-model-body">
+                    <i class="fas fa-times projects-close-btn"></i>
+                    <h3>Web Design</h3>
+                    <img src="images/home.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3>Web Design</h3>
+                    <span>Web..</span>
+                  </div>
+                  <img src="images/home.jpg" alt="">
+                </div>
+                <div class="project-model flex-center">
+                  <div class="projects-model-body">
+                    <i class="fas fa-times projects-close-btn"></i>
+                    <h3>Web Design</h3>
+                    <img src="images/home.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        
       </section>
 
 
