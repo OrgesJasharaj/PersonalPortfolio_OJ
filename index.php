@@ -298,6 +298,7 @@
           </div>
         </div>
 
+        
         <div class="get-in-touch sub-section">
           <div class="container">
             <div class="content flex-center">
@@ -315,6 +316,54 @@
           </div>
         </div>
       </section>
+
+
+
+
+      <seciton class="contact section" id="contact">
+        <div class="container flex-center">
+          <h1 class="section-title-01">Contact Me</h1>
+          <h2 class="section-title-02">Contact Me</h2>
+          <div class="content">
+            <div class="contact-left">
+              <h2>Let's discuss your project</h2>
+              <ul class="contact-list">
+                <li>
+                  <h3 class="item-title"><i class="fas fa-phone"> Phone</i></h3>
+                  <span>+383 49 381 508</span>
+                </li>
+                <li>
+                  <h3 class="item-title"><i class="fas fa-envelope"> Email Adress</i></h3>
+                  <span><a href="mailto:jasharajorges@gmail.com">jasharajorges@gmail.com</a></span>
+                </li>
+                <li>
+                  <h3 class="item-title"><i class="fas fa-map-marker-alt"> Official Adress</i></h3>
+                  <span>Fshati Sopij, Fadil Elshani 186, Suharek</span>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-right">
+              <p>I'm always open to discussing for <br><span>any website or work.</span></p>
+              <form action="" class="contact-form">
+                <div class="first-row">
+                  <input type="text" placeholder="Name">
+                </div>
+                <div class="second-row">
+                  <input type="email" placeholder="Email">
+                  <input type="text" placeholder="Subject">
+                </div>
+                <div class="third-row">
+                  <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                </div>
+                <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </seciton>
+
+
+
 
 
 
