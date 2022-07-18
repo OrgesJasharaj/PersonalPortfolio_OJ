@@ -350,31 +350,34 @@
                   <span>+383 49 381 508</span>
                 </li>
                 <li>
-                  <h3 class="item-title"><i class="fas fa-envelope"> Email Adress</i></h3>
+                  <h3 class="item-title"><i class="fas fa-envelope"> Email </i></h3>
                   <span><a href="mailto:jasharajorges@gmail.com">jasharajorges@gmail.com</a></span>
                 </li>
                 <li>
-                  <h3 class="item-title"><i class="fas fa-map-marker-alt"> Official Adress</i></h3>
-                  <span>Fshati Sopij, Fadil Elshani 186, Suharek</span>
+                  <h3 class="item-title"><i class="fas fa-map-marker-alt"> Adress</i></h3>
+                  <span>Suharek , Kosovo</span>
                 </li>
               </ul>
             </div>
             <div class="contact-right">
               <p>I'm always open to discussing for <br><span>any website or work.</span></p>
-              <form action="" class="contact-form">
+              <?php include 'sendEmail.php'; ?>
+              <form class="contact-form" id="myForm" method="post">
+                <h4 class="sent-notification"></h4>
                 <div class="first-row">
-                  <input type="text" placeholder="Name">
+                  <input name="name" id="name" type="text" placeholder="Name">
                 </div>
                 <div class="second-row">
-                  <input type="email" placeholder="Email">
-                  <input type="text" placeholder="Subject">
+                  <input name="email" id="email" type="email" placeholder="Email">
+                  <input name="subject"  id="subject" type="text" placeholder="Subject">
                 </div>
                 <div class="third-row">
-                  <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                  <textarea name="message" id="body" rows="7" placeholder="Message"></textarea>
                 </div>
-                <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                <button class="btn" type="submit" value="Send an Email" name="submit">Send Message <i class="fas fa-paper-plane"></i></button>
               </form>
             </div>
+
           </div>
         </div>
       </seciton>
@@ -421,4 +424,5 @@
     <script src="js/main.js"></script>
     </body>
   </html>
+  
 
