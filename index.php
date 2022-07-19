@@ -4,27 +4,27 @@ $query = "SELECT name, surname, email, address, phone FROM `admin` WHERE 1;";
 $result = mysqli_query($conn, $query);
 $resultCheck = mysqli_num_rows($result);
 
-$query1 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 1;";
+$query1 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE pid = 1;";
 $result1 = mysqli_query($conn, $query1);
 $resultCheck1 = mysqli_num_rows($result1);
 
-$query2 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 2;";
+$query2 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE pid = 2;";
 $result2 = mysqli_query($conn, $query2);
 $resultCheck2 = mysqli_num_rows($result2);
 
-$query3 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 3;";
+$query3 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE pid = 3;";
 $result3 = mysqli_query($conn, $query3);
 $resultCheck3 = mysqli_num_rows($result3);
 
-$query4 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 4;";
+$query4 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE pid = 4;";
 $result4 = mysqli_query($conn, $query4);
 $resultCheck4 = mysqli_num_rows($result4);
 
-$query5 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 5;";
+$query5 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE pid = 5;";
 $result5 = mysqli_query($conn, $query5);
 $resultCheck5 = mysqli_num_rows($result5);
 
-$query6 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 6;";
+$query6 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE pid = 6;";
 $result6 = mysqli_query($conn, $query6);
 $resultCheck6 = mysqli_num_rows($result6);
 ?>
@@ -245,11 +245,7 @@ $resultCheck6 = mysqli_num_rows($result6);
       </section>
 
     
-      <?php
-                  if($resultCheck1 > 0){
-                  while($rows1=mysqli_fetch_assoc($result1))
-                  {
-                  ?>
+     
       <section class="projects section" id="projects">
         <div class="container flex-center">
           <h1 class="section-title-01">Projects</h1>
@@ -257,6 +253,11 @@ $resultCheck6 = mysqli_num_rows($result6);
           <div class="content">
             <div class="projects-list">
               <div class="img-card-container">
+              <?php
+                  if($resultCheck1 > 0){
+                  while($rows1=mysqli_fetch_assoc($result1))
+                  {
+                  ?>
                 <div class="img-card">
                   <div class="overlay"></div>
                   <div class="info">
@@ -269,105 +270,148 @@ $resultCheck6 = mysqli_num_rows($result6);
                   <div class="projects-model-body">
                     <i class="fas fa-times projects-close-btn"></i>
                     <h3><?php echo $rows1['pname'];?></h3>
-                    <img src="images/home.jpg" alt="">
+                    <img src="<?php echo $rows1['pimage'];?>" alt="">
                     <p><?php echo $rows1['pdescription1']; ?></p>
                   </div>
                 </div>
+                <?php
+                  }}
+                  ?>
               </div>
-
+                      
               <div class="img-card-container">
+              <?php
+                  if($resultCheck2 > 0){
+                  while($rows2=mysqli_fetch_assoc($result2))
+                  {
+                  ?>
                 <div class="img-card">
                   <div class="overlay"></div>
                   <div class="info">
-                    <h3>Web Design</h3>
-                    <span>web..</span>
+                    <h3><?php echo $rows2['pname'];?></h3>
+                    <span><?php echo $rows2['pdescription'];?></span>
                   </div>
-                  <img src="images/home.jpg" alt="">
+                  <img src="<?php echo $rows2['pimage'];?>" alt="">
                 </div>
                 <div class="project-model flex-center">
                   <div class="projects-model-body">
                     <i class="fas fa-times projects-close-btn"></i>
-                    <h3>Web Design</h3>
-                    <img src="images/home.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                    <h3><?php echo $rows2['pname'];?></h3>
+                    <img src="<?php echo $rows2['pimage'];?>" alt="">
+                    <p><?php echo $rows2['pdescription1']; ?></p>
                   </div>
                 </div>
+                <?php
+                  }}
+                  ?>
               </div>
 
               <div class="img-card-container">
+              <?php
+                  if($resultCheck3 > 0){
+                  while($rows3=mysqli_fetch_assoc($result3))
+                  {
+                  ?>
                 <div class="img-card">
                   <div class="overlay"></div>
                   <div class="info">
-                    <h3>Web Design</h3>
-                    <span>web..</span>
+                    <h3><?php echo $rows3['pname'];?></h3>
+                    <span><?php echo $rows3['pdescription'];?></span>
                   </div>
-                  <img src="images/home.jpg" alt="">
+                  <img src="<?php echo $rows3['pimage'];?>" alt="">
                 </div>
                 <div class="project-model flex-center">
                   <div class="projects-model-body">
                     <i class="fas fa-times projects-close-btn"></i>
-                    <h3>Web Design</h3>
-                    <img src="images/home.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                    <h3><?php echo $rows3['pname'];?></h3>
+                    <img src="<?php echo $rows3['pimage'];?>" alt="">
+                    <p><?php echo $rows3['pdescription1']; ?></p>
                   </div>
                 </div>
+                <?php
+                  }}
+                  ?>
               </div>
               
               <div class="img-card-container">
+              <?php
+                  if($resultCheck4 > 0){
+                  while($rows4=mysqli_fetch_assoc($result4))
+                  {
+                  ?>
                 <div class="img-card">
                   <div class="overlay"></div>
                   <div class="info">
-                    <h3>Web Design</h3>
-                    <span>web..</span>
+                    <h3><?php echo $rows4['pname'];?></h3>
+                    <span><?php echo $rows4['pdescription'];?></span>
                   </div>
-                  <img src="images/home.jpg" alt="">
+                  <img src="<?php echo $rows4['pimage'];?>" alt="">
                 </div>
                 <div class="project-model flex-center">
                   <div class="projects-model-body">
                     <i class="fas fa-times projects-close-btn"></i>
-                    <h3>Web Design</h3>
-                    <img src="images/home.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                    <h3><?php echo $rows4['pname'];?></h3>
+                    <img src="<?php echo $rows4['pimage'];?>" alt="">
+                    <p><?php echo $rows4['pdescription1']; ?></p>
                   </div>
                 </div>
+                <?php
+                  }}
+                  ?>
               </div>
 
               <div class="img-card-container">
+              <?php
+                  if($resultCheck5 > 0){
+                  while($rows5=mysqli_fetch_assoc($result5))
+                  {
+                  ?>
                 <div class="img-card">
                   <div class="overlay"></div>
                   <div class="info">
-                    <h3>Web Design</h3>
-                    <span>web..</span>
+                    <h3><?php echo $rows5['pname'];?></h3>
+                    <span><?php echo $rows5['pdescription'];?></span>
                   </div>
-                  <img src="images/home.jpg" alt="">
+                  <img src="<?php echo $rows5['pimage'];?>" alt="">
                 </div>
                 <div class="project-model flex-center">
                   <div class="projects-model-body">
                     <i class="fas fa-times projects-close-btn"></i>
-                    <h3>Web Design</h3>
-                    <img src="images/home.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                    <h3><?php echo $rows5['pname'];?></h3>
+                    <img src="<?php echo $rows5['pimage'];?>" alt="">
+                    <p><?php echo $rows5['pdescription1']; ?></p>
                   </div>
                 </div>
+                <?php
+                  }}
+                  ?>
               </div>
 
               <div class="img-card-container">
+              <?php
+                  if($resultCheck6 > 0){
+                  while($rows6=mysqli_fetch_assoc($result6))
+                  {
+                  ?>
                 <div class="img-card">
                   <div class="overlay"></div>
                   <div class="info">
-                    <h3>Web Design</h3>
-                    <span>Web..</span>
+                    <h3><?php echo $rows6['pname'];?></h3>
+                    <span><?php echo $rows6['pdescription'];?></span>
                   </div>
-                  <img src="images/home.jpg" alt="">
+                  <img src="<?php echo $rows6['pimage'];?>" alt="">
                 </div>
                 <div class="project-model flex-center">
                   <div class="projects-model-body">
                     <i class="fas fa-times projects-close-btn"></i>
-                    <h3>Web Design</h3>
-                    <img src="images/home.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                    <h3><?php echo $rows6['pname'];?></h3>
+                    <img src="<?php echo $rows6['pimage'];?>" alt="">
+                    <p><?php echo $rows6['pdescription1']; ?></p>
                   </div>
                 </div>
+                <?php
+                  }}
+                  ?>
               </div>
             </div>
           </div>
@@ -390,9 +434,7 @@ $resultCheck6 = mysqli_num_rows($result6);
           </div>
         </div>
       </section>
-      <?php
-                  }}
-                  ?>
+      
 
       <seciton class="contact section" id="contact">
         <div class="container flex-center">
@@ -457,7 +499,7 @@ $resultCheck6 = mysqli_num_rows($result6);
 
           </div>
         </div>
-      </seciton>
+      </section>
 
       <footer>
         <div class="footer-container">
