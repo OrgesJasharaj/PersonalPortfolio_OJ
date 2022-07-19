@@ -9,3 +9,6 @@ ne folderin database files) jane perdorur per t'i shtuar keto funksione: <br/>
     ne UI <br/>
  2. Per ta funksionalizuar pjesen e kontaktit (dergimin e emails) <br/>
  3. Per ta funksionalizuar butonin per shkarkimin e CV <br/>
+ 
+ Ne folderin demo mund te gjendet video si demo e projektit (nuk mund te hostohej online </br>
+ per shkak se ka shume kod).
