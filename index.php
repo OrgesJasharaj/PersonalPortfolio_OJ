@@ -1,3 +1,34 @@
+<?php 
+include_once 'connection.php';
+$query = "SELECT name, surname, email, address, phone FROM `admin` WHERE 1;";
+$result = mysqli_query($conn, $query);
+$resultCheck = mysqli_num_rows($result);
+
+$query1 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 1;";
+$result1 = mysqli_query($conn, $query1);
+$resultCheck1 = mysqli_num_rows($result1);
+
+$query2 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 2;";
+$result2 = mysqli_query($conn, $query2);
+$resultCheck2 = mysqli_num_rows($result2);
+
+$query3 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 3;";
+$result3 = mysqli_query($conn, $query3);
+$resultCheck3 = mysqli_num_rows($result3);
+
+$query4 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 4;";
+$result4 = mysqli_query($conn, $query4);
+$resultCheck4 = mysqli_num_rows($result4);
+
+$query5 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 5;";
+$result5 = mysqli_query($conn, $query5);
+$resultCheck5 = mysqli_num_rows($result5);
+
+$query6 = "SELECT pname, pdescription, pdescription1, pimage FROM `projects` WHERE 6;";
+$result6 = mysqli_query($conn, $query6);
+$resultCheck6 = mysqli_num_rows($result6);
+?>
+ 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -12,7 +43,7 @@
 
       <div class="scrollToTop-btn flex-center">
           <i class="fas fa-arrow-up"></i>
-      </div>
+      </div> 
 
 
       <div class="theme-btn flex-center">
@@ -91,7 +122,29 @@
                   <span>Success<br>Projects</span>
                 </li>
               </ul>
-              <a href="" class="btn">Download CV <i class="fas fa-download"></i></a>
+              
+              
+              <a href="index.php?file=cv.pdf" class="btn">Download CV <i class="fas fa-download"></i></a>
+              <?php 
+              if(!empty($_GET['file'])){
+                $filename = basename($_GET['file']);
+                  $filepath = 'destination/'.$filename;
+                  if(!empty($filename) && file_exists($filepath)){
+                    //Defining headers
+                    header("Cache-Control: public");
+                    header("Content-Description: File Transfer");
+                    header("Content-Disposition: attachment; filename=$filename");
+                    header("Content-Type: application/octet-stream");
+                    header("Content-Transfer-Encoding: binary");
+
+                    readfile($filepath);
+                    exit;
+                  } else {
+                    echo "String";
+                  }
+
+             }
+              ?>
             </div>
           </div>
         </div>
@@ -191,7 +244,12 @@
         </div>
       </section>
 
-
+    
+      <?php
+                  if($resultCheck1 > 0){
+                  while($rows1=mysqli_fetch_assoc($result1))
+                  {
+                  ?>
       <section class="projects section" id="projects">
         <div class="container flex-center">
           <h1 class="section-title-01">Projects</h1>
@@ -202,17 +260,17 @@
                 <div class="img-card">
                   <div class="overlay"></div>
                   <div class="info">
-                    <h3>Web Design</h3>
-                    <span>web..</span>
+                    <h3><?php echo $rows1['pname'];?></h3>
+                    <span><?php echo $rows1['pdescription'];?></span>
                   </div>
-                  <img src="images/home.jpg" alt="">
+                  <img src="<?php echo $rows1['pimage'];?>" alt="">
                 </div>
                 <div class="project-model flex-center">
                   <div class="projects-model-body">
                     <i class="fas fa-times projects-close-btn"></i>
-                    <h3>Web Design</h3>
+                    <h3><?php echo $rows1['pname'];?></h3>
                     <img src="images/home.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur similique atque, aliquam earum, a labore in dolorem assumenda aperiam autem perferendis illo quam quod, eos quas sed ad explicabo repellat?</p>
+                    <p><?php echo $rows1['pdescription1']; ?></p>
                   </div>
                 </div>
               </div>
@@ -254,7 +312,7 @@
                   </div>
                 </div>
               </div>
-
+              
               <div class="img-card-container">
                 <div class="img-card">
                   <div class="overlay"></div>
@@ -315,7 +373,6 @@
           </div>
         </div>
 
-
         <div class="get-in-touch sub-section">
           <div class="container">
             <div class="content flex-center">
@@ -333,9 +390,9 @@
           </div>
         </div>
       </section>
-
-
-
+      <?php
+                  }}
+                  ?>
 
       <seciton class="contact section" id="contact">
         <div class="container flex-center">
@@ -345,18 +402,38 @@
             <div class="contact-left">
               <h2>Let's discuss your project</h2>
               <ul class="contact-list">
+              <?php
+                  if($resultCheck > 0){
+                  while($rows=mysqli_fetch_assoc($result))
+                  {
+                  ?>
                 <li>
                   <h3 class="item-title"><i class="fas fa-phone"> Phone</i></h3>
-                  <span>+383 49 381 508</span>
+                  <span>
+                    <?php
+                      echo $rows['phone'];
+                    ?>
+                  </span>
                 </li>
                 <li>
                   <h3 class="item-title"><i class="fas fa-envelope"> Email </i></h3>
-                  <span><a href="mailto:jasharajorges@gmail.com">jasharajorges@gmail.com</a></span>
+                    <span><a href="mailto:jasharajorges@gmail.com">
+                    <?php
+                     echo $rows['email'];
+                    ?>
+                    </a></span>
                 </li>
                 <li>
-                  <h3 class="item-title"><i class="fas fa-map-marker-alt"> Adress</i></h3>
-                  <span>Suharek , Kosovo</span>
+                  <h3 class="item-title"><i class="fas fa-map-marker-alt"> Address</i></h3>
+                  <span>
+                    <?php
+                     echo $rows['address'];
+                    ?>
+                  </span>
                 </li>
+                <?php
+                  }}
+                  ?>
               </ul>
             </div>
             <div class="contact-right">

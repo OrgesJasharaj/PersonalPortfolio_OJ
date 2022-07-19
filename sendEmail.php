@@ -23,5 +23,5 @@ if(isset($_POST['submit'])){
     $mail ->Subject = 'PHP Mailer Subject';
     $mail ->Body = '<h3>Name: {$name} <br>Subject: {$subject} <br>Email: {$email} <br>Message : {$message}</h3>';
     $mail ->send();
-}
+};
 ?>
