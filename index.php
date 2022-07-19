@@ -83,7 +83,7 @@ $resultCheck6 = mysqli_num_rows($result6);
             <h2>Hi, I am Orges Jasharaj</h2>
             <h3>Full Stack Developer</h3>
             <p>I can work as front-end developer and back-end developer</p>
-          <a href="" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
+          <a href="https://www.linkedin.com/in/orges-jasharaj-10b690220/" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
         </div>
         <div class="home-img">
           <img src="images/home.jpg" alt="">
@@ -427,7 +427,7 @@ $resultCheck6 = mysqli_num_rows($result6);
                   <h2>Next Project</h2>
                 </div>
                 <div class="contact-btn">
-                  <a href="" class="btn">Get In Touch <i class="fas fa-paper-plane"></i></a>
+                  <a href="https://www.linkedin.com/in/orges-jasharaj-10b690220/" class="btn">Get In Touch <i class="fas fa-paper-plane"></i></a>
                 </div>
               </div>
             </div>
@@ -521,9 +521,9 @@ $resultCheck6 = mysqli_num_rows($result6);
             <div class="follow group">
             <h3>Follow</h3>
             <ul>
-              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href=""><i class="fab fa-instagram"></i></a></li>
-              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/orges.jasharaj.12"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/orgesjasharajj/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/orgesjasharaj1"><i class="fab fa-twitter"></i></a></li>
             </ul>
             </div>
           </div>
