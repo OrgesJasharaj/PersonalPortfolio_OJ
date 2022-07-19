@@ -82,7 +82,7 @@ $resultCheck6 = mysqli_num_rows($result6);
           <div class="info">
             <h2>Hi, I am Orges Jasharaj</h2>
             <h3>Full Stack Developer</h3>
-            <p>I can work as front-end developer and back-end developer</p>
+            <p>Front and Back-End Developer</p>
           <a href="https://www.linkedin.com/in/orges-jasharaj-10b690220/" class="btn">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
         </div>
         <div class="home-img">
@@ -106,19 +106,19 @@ $resultCheck6 = mysqli_num_rows($result6);
               <div class="description">
                 <h3>I'm Orges</h3>
                 <h4>A <span>full stack developer</span> from <span>Kosova<span></h4>
-                <p>I design website and i make the backend of web.Check my skills to see with what i work!</p>
+                <p>Designer dhe back-end developer.Check my skills to see with what I work!</p>
               </div>
               <ul class="professional-list">
                 <li class="list-item">
-                  <h3>+2</h3>
+                  <h3>1+</h3>
                   <span>Years of<br>Experience</span>
                 </li>
                 <li class="list-item">
-                  <h3>14</h3>
+                  <h3>20</h3>
                   <span>Happy<br>Customers</span>
                 </li>
                 <li class="list-item">
-                  <h3>18</h3>
+                  <h3>20</h3>
                   <span>Success<br>Projects</span>
                 </li>
               </ul>
@@ -157,7 +157,7 @@ $resultCheck6 = mysqli_num_rows($result6);
           <div class="content">
             <div class="skills-description">
               <h3>Education & Skills</h3>
-              <p>I am actually in high school now but i am going in the digital school in Prizren too.I spent my time and in look toturial for programming</p>
+              <p>I am currently in high school and I also attend trainings in Digital School (Prizren). Also a self-taught programmer through online courses/tutorials</p>
             </div>
             <div class="skills-info education-all">
               <div class="education">
